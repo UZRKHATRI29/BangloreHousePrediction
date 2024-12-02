@@ -11,7 +11,7 @@ pipe = pickle.load(open("E:\Ededge\Projects\House Prediction\RigeModel.pkl", 'rb
 def index():
     
     locations = sorted(data['location'].unique())
-    return render_template('index.html', locations=locations)
+    return render_template('Templates\index.html', locations=locations)
 
 @app.route("/predict", methods=['POST'])
 def predict():
